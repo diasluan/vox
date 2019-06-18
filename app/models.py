@@ -1,4 +1,4 @@
-from vox import db
+from app import db
 
 class Lights(db.Model):
   id = db.Column(db.Integer, primary_key=True)

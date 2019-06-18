@@ -9,7 +9,7 @@ app.config.from_object(Config)
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
-from vox import routes, models
+from app import routes, models
 
 if __name__ == "__main__":
     app.run()
