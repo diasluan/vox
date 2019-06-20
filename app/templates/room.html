@@ -8,23 +8,23 @@
             <div class="text-muted text-center mt-2 mb-3">2nd floor</div>
             <div class="btn-wrapper text-center">
               {% if light_status[20] %}
-              <a href="{{url_for('lights', status='off', index=20) }}" class="btn btn-neutral btn-icon active">
+              <a href="{{url_for('lights', status='off', id=20) }}" class="btn btn-neutral btn-icon active">
                 <i class="btn-inner--icon ni ni-bulb-off"></i>
                 <span class="btn-inner--text">Stairs</span>
               </a>
               {% else %}
-              <a href="{{url_for('lights', status='on', index=20) }}" class="btn btn-neutral btn-icon">
+              <a href="{{url_for('lights', status='on', id=20) }}" class="btn btn-neutral btn-icon">
                 <i class="btn-inner--icon ni ni-bulb-off"></i>
                 <span class="btn-inner--text">Stairs</span>
               </a>
               {% endif %}
               {% if light_status[21] %}
-              <a href="{{url_for('lights', status='off', index=21) }}" class="btn btn-neutral btn-icon active">
+              <a href="{{url_for('lights', status='off', id=21) }}" class="btn btn-neutral btn-icon active">
                 <i class="btn-inner--icon ni ni-bulb-on"></i>
                 <span class="btn-inner--text">Study</span>
               </a>
               {% else %}
-              <a href="{{url_for('lights', status='on', index=21) }}" class="btn btn-neutral btn-icon">
+              <a href="{{url_for('lights', status='on', id=21) }}" class="btn btn-neutral btn-icon">
                 <i class="btn-inner--icon ni ni-bulb-on"></i>
                 <span class="btn-inner--text">Study</span>
               </a>
@@ -32,23 +32,23 @@
             </div>
             <div class="btn-wrapper text-center">
               {% if light_status[16] %}
-              <a href="{{url_for('lights', status='off', index=16) }}" class="btn btn-neutral btn-icon active">
+              <a href="{{url_for('lights', status='off', id=16) }}" class="btn btn-neutral btn-icon active">
                 <i class="btn-inner--icon ni ni-bulb-off"></i>
                 <span class="btn-inner--text">Studio</span>
               </a>
               {% else %}
-              <a href="{{url_for('lights', status='on', index=16) }}" class="btn btn-neutral btn-icon">
+              <a href="{{url_for('lights', status='on', id=16) }}" class="btn btn-neutral btn-icon">
                 <i class="btn-inner--icon ni ni-bulb-off"></i>
                 <span class="btn-inner--text">Studio</span>
               </a>
               {% endif %}
               {% if light_status[19] %}
-              <a href="{{url_for('lights', status='off', index=19) }}" class="btn btn-neutral btn-icon active">
+              <a href="{{url_for('lights', status='off', id=19) }}" class="btn btn-neutral btn-icon active">
                 <i class="btn-inner--icon ni ni-bulb-off"></i>
                 <span class="btn-inner--text">Outside</span>
               </a>
               {% else %}
-              <a href="{{url_for('lights', status='on', index=19) }}" class="btn btn-neutral btn-icon">
+              <a href="{{url_for('lights', status='on', id=19) }}" class="btn btn-neutral btn-icon">
                 <i class="btn-inner--icon ni ni-bulb-off"></i>
                 <span class="btn-inner--text">Outside</span>
               </a>
@@ -60,3 +60,4 @@
     </div>
   </div>
 {% endblock}
+
