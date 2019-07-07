@@ -5,7 +5,19 @@
       <div class="col-lg-5 col-md-7">
         <div class="card bg-secondary shadow border-0">
           <div class="card-header bg-transparent pb-5">
-            <div class="text-muted text-center mt-2 mb-3">2nd floor</div>
+            <div class="text-muted text-center mt-2 mb-3">
+              {% if scene_status[0] %}
+              <a href="{{url_for('scene', status='off', id=0) }}" class="btn btn-neutral btn-icon active">
+                <i class="btn-inner--icon ni ni-bulb-off"></i>
+                <span class="btn-inner--text">VOX</span>
+              </a>
+              {% else %}
+              <a href="{{url_for('scene', status='on', id=0) }}" class="btn btn-neutral btn-icon">
+                <i class="btn-inner--icon ni ni-bulb-off"></i>
+                <span class="btn-inner--text">VOX</span>
+              </a>
+              {% endif %}
+            </div>
             <div class="btn-wrapper text-center">
               {% if light_status[20] %}
               <a href="{{url_for('lights', status='off', id=20) }}" class="btn btn-neutral btn-icon active">
